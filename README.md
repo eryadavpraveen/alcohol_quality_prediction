@@ -1,113 +1,92 @@
-🍷 Alcohol Category Detection using Machine Learning
-🚀 End-to-End ML Project | XGBoost | Streamlit | Model Deployment
+# 🍷 Alcohol Category Detection using Machine Learning
 
-This project demonstrates a complete machine learning pipeline — from data preprocessing and model training to deployment as an interactive web application.
-The system predicts whether an alcohol sample belongs to a Good or Not Good quality category based on its physicochemical properties.
+### 🚀 End-to-End ML Project | XGBoost | Streamlit | Model Deployment
 
-🎯 Goal: Showcase real-world ML deployment skills, not just model training.
+This project demonstrates a **complete machine learning pipeline** — from data preprocessing and model training to deployment as an **interactive web application**.  
+The system predicts whether an alcohol sample belongs to a **Good** or **Not Good** quality category based on its physicochemical properties.
 
-🔍 Problem Statement
+🎯 **Goal:** Showcase real-world ML deployment skills, not just model training.
 
-Manual evaluation of alcohol quality can be subjective and time-consuming.
-This project automates quality classification using a supervised machine learning approach, enabling fast and consistent predictions.
+---
 
-🧠 Solution Overview
+## 🔍 Problem Statement
 
-Trained a binary classification model using XGBoost
+Manual evaluation of alcohol quality can be **subjective and time-consuming**.  
+This project automates quality classification using a **supervised machine learning approach**, enabling fast and consistent predictions.
 
-Applied feature scaling with StandardScaler
+---
 
-Persisted model and scaler using joblib
+## 🧠 Solution Overview
 
-Deployed the model using Streamlit for real-time predictions
+- Trained a **binary classification model** using **XGBoost**
+- Applied feature scaling with **StandardScaler**
+- Persisted model and scaler using **joblib**
+- Deployed the model using **Streamlit** for real-time predictions
 
-🛠️ Tech Stack
-Category	Tools
-Language	Python
-ML Model	XGBoost
-ML Libraries	Scikit-learn, Pandas
-Model Persistence	Joblib
-Web Framework	Streamlit
-📊 Input Features
+---
 
-Fixed acidity
+## 🛠️ Tech Stack
 
-Volatile acidity
+| Category | Tools |
+|--------|------|
+| Language | Python |
+| ML Model | XGBoost |
+| ML Libraries | Scikit-learn, Pandas |
+| Model Persistence | Joblib |
+| Web Framework | Streamlit |
 
-Citric acid
+---
 
-Residual sugar
+## 📊 Input Features
 
-Chlorides
+- Fixed acidity  
+- Volatile acidity  
+- Citric acid  
+- Residual sugar  
+- Chlorides  
+- Free sulfur dioxide  
+- Total sulfur dioxide  
+- Density  
+- pH  
+- Sulphates  
+- Alcohol  
 
-Free sulfur dioxide
+---
 
-Total sulfur dioxide
+## ⚙️ Machine Learning Pipeline
 
-Density
+1. Data preprocessing and feature selection  
+2. Feature scaling using `StandardScaler`  
+3. Model training with XGBoost  
+4. Hyperparameter tuning and best model selection  
+5. Model serialization using joblib  
+6. Real-time inference through Streamlit UI  
 
-pH
+---
 
-Sulphates
+## 🖥️ Application Overview
 
-Alcohol
+Users enter physicochemical attributes of alcohol and receive an instant **quality category prediction**.
 
-⚙️ ML Pipeline
+✔️ Fast inference  
+✔️ Clean UI  
+✔️ Deployment-ready structure  
 
-Data preprocessing and feature selection
+---
 
-Standardization using StandardScaler
+## 📁 Project Structure
+#├── app.py                       # Streamlit application
+#├── xgb_classifier_best_param.pkl # Trained XGBoost model
+#├── xgb_scaler.pkl               # Feature scaler
+#├── requirements.txt             # Dependencies
+#└── README.md
 
-Model training with XGBoost
 
-Hyperparameter optimization (best parameters saved)
+---
 
-Model serialization for deployment
+## ▶️ How to Run Locally
 
-Real-time inference via Streamlit UI
-
-🖥️ Application Demo
-
-Users input chemical attributes and instantly receive a predicted alcohol quality category.
-
-✔️ Fast inference
-✔️ Clean UI
-✔️ Production-ready structure
-
-📁 Project Structure
-├── app.py                       # Streamlit application
-├── xgb_classifier_best_param.pkl # Trained XGBoost model
-├── xgb_scaler.pkl               # Feature scaler
-├── requirements.txt             # Dependencies
-└── README.md
-
-▶️ How to Run Locally
+```bash
 pip install -r requirements.txt
 streamlit run app.py
 
-🎯 What This Project Demonstrates (For Recruiters)
-
-✅ End-to-end ML workflow
-✅ Model deployment skills
-✅ Feature preprocessing awareness
-✅ Handling ML dependencies (XGBoost)
-✅ Real-world inference pipeline
-✅ Clean, modular, maintainable code
-
-📌 Key Learnings
-
-Trained models remain dependent on their originating libraries (XGBoost)
-
-Environment consistency is critical for ML deployment
-
-Streamlit enables rapid ML prototyping and delivery
-
-🚀 Future Improvements
-
-Probability-based predictions
-
-Model explainability (SHAP)
-
-Multi-class alcohol quality classification
-
-Cloud deployment (Streamlit Cloud / Docker)
