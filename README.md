@@ -75,11 +75,11 @@ Users enter physicochemical attributes of alcohol and receive an instant **quali
 ---
 
 ## 📁 Project Structure
-#├── app.py                       # Streamlit application<br>
-#├── xgb_classifier_best_param.pkl # Trained XGBoost model<br>
-#├── xgb_scaler.pkl               # Feature scaler<br>
-#├── requirements.txt             # Dependencies<br>
-#└── README.md<br>
+├── app.py                       # Streamlit application<br>
+├── xgb_classifier_best_param.pkl # Trained XGBoost model<br>
+├── xgb_scaler.pkl               # Feature scaler<br>
+├── requirements.txt             # Dependencies<br>
+└── README.md<br>
 
 
 ---
